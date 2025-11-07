@@ -17,12 +17,12 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">@yield('navbar', 'CVs App')</a>
+                <a class="navbar-brand" href="{{ route('main') }}">@yield('navbar', 'CVs App')</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Create CVs</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">View Cvs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('alumno.create') }}" > Create CVs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('alumno.index') }}">View Cvs</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
                     </ul>
                 </div>
@@ -32,8 +32,8 @@
         <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+                    <h1 class="fw-bolder">Bienvenidos Alumnos</h1>
+                    <p class="lead mb-0">Rellene los datos del formulario y no se olvide de subir su CV</p>
                 </div>
             </div>
         </header>
